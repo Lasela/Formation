@@ -1,73 +1,105 @@
-nav{
-    margin: 0 145px;
+body{
+    margin: auto;
+}
+
+header{
+    border-bottom: solid #5e5d5d 1px;
+}
+
+.title-right {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.navbar ul{
+    padding-left: 0;
 }
 
 .navbar li{
     display: inline-block;
-    margin: 0 15px;
     font-weight: 600;
 }
 
-.line{
-    border: solid #5e5d5d 1px;
+.nav-link{
+    padding: 15px;
+    text-decoration: none;
 }
 
 .title{
-    margin: 0 200px;
+    margin-left: 15px;
 }
 
-.line_1{
-    display: flex;
-    padding: 0 100px;
+.container{
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
 }
 
-.content_line_1{
+.articles{
     display: flex;
-    margin: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.article{
+    display: flex;
+    width: 47%;
+    margin: 15px 1%;
     border: solid #979696 1px;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    align-items: center;
 }
 
-.time{
-    display: inline-flex;
+.image{
+    width: 180px;
+    margin-top: 15px;
 }
 
-.time p{
+.article-footer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.publish-date{
     color: #979696;
-    margin: 0 5px 0 0;
+    margin-right: 5px;
 }
 
-.line_2{
-    display: flex;
-    padding: 0 100px;
-}
-
-.content_line_2{
-    display: flex;
-    margin: 20px;
-    border: solid #979696 1px;
-}
-
-.lines{
-    border: solid #5e5d5d 1px;
-    margin: 0 500px 20px 500px;
+.footer::before{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color:#979696;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 80px;
 }
 
 .footer{
-    background-color: #5d5d5d;
-    color: #ffffff;
+    background-color: #383737;
     padding: 30px;
 }
 
 .footer li{
     display: inline-block;
-    text-decoration: none;
-    margin: 0 15px;
 }
 
-.footer-content ul{
-    margin: 0 350px;
+.footer .nav-link{
+    color: #ffffff;
+    font-weight: normal;
 }
 
-.footer-content p{
-    margin: 15px 500px;
+.footer .navbar ul{
+    text-align: center;
+}
+
+.copyright{
+    color: #ffffff;
+    text-align: center;
 }
