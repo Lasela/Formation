@@ -82,6 +82,7 @@
         margin-right: auto;
         position: relative;
         bottom: 80px;
+        justify-content: center;
     }
     
     .footer{
@@ -185,6 +186,10 @@ header{
     align-items: baseline;
     justify-content: space-between;
     margin-right: 15px;
+}
+
+.footer::before{
+    bottom: 50px;
 }
 
 .publish-date{
